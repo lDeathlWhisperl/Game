@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Units">
+      <UniqueIdentifier>{67785ab7-4e79-4ec8-8c84-dfcf8c10be99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Unit">
+      <UniqueIdentifier>{7d23b74d-784a-4a96-9cec-bfa8396972aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Unit types">
+      <UniqueIdentifier>{3fcc6d52-3586-421d-a917-30f8924bc656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Unit types\cpp">
+      <UniqueIdentifier>{7a8b8229-8b8b-4c69-bbb9-4e2f4580841d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Unit types\headers">
+      <UniqueIdentifier>{ff750c87-d0fb-435c-bd20-698b76b33042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Range">
+      <UniqueIdentifier>{44f122cd-9ec8-4c15-a726-b34442a1e005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Range\Archer">
+      <UniqueIdentifier>{53fcc12c-8240-442c-8163-e0e9a23ad48f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Range\Crossbower">
+      <UniqueIdentifier>{c55296d2-02ee-48aa-8431-9f4eee953892}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Player">
+      <UniqueIdentifier>{6a27865f-04ac-4c29-895a-4dfe388edfbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Units\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Range.cpp">
+      <Filter>Units\Unit types\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Archer.cpp">
+      <Filter>Units\Range\Archer</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Units\Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Field.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Units\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Range.h">
+      <Filter>Units\Unit types\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Archer.h">
+      <Filter>Units\Range\Archer</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Units\Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
