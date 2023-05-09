@@ -21,11 +21,15 @@ void Base::shop(Player& player)
 	if (player.getCoords() != coords) return;  // если мы находимся за пределами базы
 
 	isShopActive = true;
-
-	while (isShopActive) // отрисовка меню и кнопок магазина (тут можно не вникать в суть, просто для красоты. но можешь попробовать на свой страх и риск :)) 
+	// отрисовка меню и кнопок магазина (тут можно не вникать в суть, просто для красоты. но можешь попробовать на свой страх и риск :)) 
+	// из важного стоит лишь взглянуть на метод spawn
+	gotoPoint({ 0, 0 });
+	for (int i = 1; i <= 6; ++i)
+		std::cout << "                         \n";
+	while (isShopActive)
 	{
-		gotoPoint({ 0, 27 });
-		std::cout << "Welcome to unishop!\n\n";
+		gotoPoint({ 0, 0 });
+		std::cout << "Welcome to unishop! \n\n";
 
 		menu();
 		controller_menu();
@@ -73,7 +77,7 @@ void Base::select_menu()
 		menu_id = 0;
 		while(!isExit)
 		{
-			gotoPoint({ 0, 27 });
+			gotoPoint({ 0, 0 });
 			std::cout << "Melee warriors list:\n\n";
 
 			menu_melee();
@@ -85,7 +89,7 @@ void Base::select_menu()
 		menu_id = 0;
 		while (!isExit)
 		{
-			gotoPoint({ 0, 27 });
+			gotoPoint({ 0, 0 });
 			std::cout << "Range warriors list:\n\n";
 
 			menu_range();
@@ -105,7 +109,7 @@ void Base::menu_melee()
 {
 	char menu[][18] = { "[ swordsman ]\x1b[0m",
 						"[   heavy   ]\x1b[0m",
-						"[    exit   ]\x1b[0m" };
+						"[    back   ]\x1b[0m" };
 
 	for (int i = 0; i < 3; ++i)
 	{
@@ -135,16 +139,17 @@ void Base::controller_menu_melee(bool& isExit)
 		break;
 	}
 }
-//unfinished
 void Base::select_menu_melee(bool& isExit)
 {
 	switch (menu_id)
 	{
 	case 0:
-
+		units.push_back(spawn(1, unit_type));
+		setCoords();
 		break;
 	case 1:
-
+		units.push_back(spawn(2, unit_type));
+		setCoords();
 		break;
 	case 2:
 		isExit = true;
@@ -156,7 +161,7 @@ void Base::menu_range()
 {
 	char menu[][19] = { "[   archer   ]\x1b[0m",
 						"[ crossbower ]\x1b[0m",
-						"[    exit    ]\x1b[0m" };
+						"[    back    ]\x1b[0m" };
 
 	for (int i = 0; i < 3; ++i)
 	{
@@ -186,16 +191,17 @@ void Base::controller_menu_range(bool& isExit)
 		break;
 	}
 }
-//unfinished
 void Base::select_menu_range(bool& isExit)
 {
 	switch (menu_id)
 	{
 	case 0:
-
+		units.push_back(spawn(1, unit_type));
+		setCoords();
 		break;
 	case 1:
-
+		units.push_back(spawn(2, unit_type));
+		setCoords();
 		break;
 	case 2:
 		isExit = true;
@@ -227,4 +233,23 @@ Unit* Base::spawn(int lvl, int type)
 	}
 	delete spawner;
 	return unit;
+}
+void Base::setCoords()
+{
+	gotoPoint({ 0, 0 });
+	for (int i = 1; i <= 6; ++i)
+		std::cout << "                         \n";
+	gotoPoint({ 0, 0 });
+
+	int x, y;
+	std::cout << "set unit coords: ";
+	std::cin >> x >> y;
+
+	if (x >= length) x = length*2 - 3;
+	if (x <= 0) x = 2;
+
+	if (y >= width-1) y = width - 2;
+	if (y <= 0) y = 2;
+
+	units.back()->setCoords({ x, y });
 }

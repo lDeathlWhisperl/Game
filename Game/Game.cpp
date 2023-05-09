@@ -36,11 +36,11 @@ void Blinking()
 int main()
 {
     std::cout << "\033]2;Game\007"; // заголовок окна
-    fullscreen();
+    //fullscreen(); // тут по желанию
     Blinking(); // здесь каретка становится невидимой, можешь закомментировать и увидеть, на что это влияет
 
     Field field(25, 25);
-    Base base;
+    Base base(25,25);
     Player player;
 
     GAMELOOP

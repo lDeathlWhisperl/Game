@@ -8,12 +8,12 @@
 class Base
 {
 	Point coords;
-	int menu_id = 0, unit_lvl = 0, unit_type = 0;
+	int menu_id = 0, unit_type = 0, width, length;
 	bool isShopActive = true;
 	std::list<Unit*> units;
 
 public:
-	Base() : coords({1, 1}) {}
+	Base(int w, int l) : coords({1, 1}), width(w), length(l) {}
 
 	void draw();
 
@@ -32,5 +32,6 @@ private:
 	void select_menu();
 
 	Unit* spawn(int, int);
+	void setCoords();
 };
 
