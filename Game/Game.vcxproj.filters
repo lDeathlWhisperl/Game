@@ -22,12 +22,6 @@
     <Filter Include="Units\Unit types">
       <UniqueIdentifier>{3fcc6d52-3586-421d-a917-30f8924bc656}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Units\Unit types\cpp">
-      <UniqueIdentifier>{7a8b8229-8b8b-4c69-bbb9-4e2f4580841d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Units\Unit types\headers">
-      <UniqueIdentifier>{ff750c87-d0fb-435c-bd20-698b76b33042}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Units\Range">
       <UniqueIdentifier>{44f122cd-9ec8-4c15-a726-b34442a1e005}</UniqueIdentifier>
     </Filter>
@@ -75,17 +69,11 @@
     <ClCompile Include="Unit.cpp">
       <Filter>Units\Unit</Filter>
     </ClCompile>
-    <ClCompile Include="Range.cpp">
-      <Filter>Units\Unit types\cpp</Filter>
-    </ClCompile>
     <ClCompile Include="Archer.cpp">
       <Filter>Units\Range\Archer</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Units\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Melee.cpp">
-      <Filter>Units\Unit types\cpp</Filter>
     </ClCompile>
     <ClCompile Include="Swordsman.cpp">
       <Filter>Units\Melee\Swordsman</Filter>
@@ -110,17 +98,11 @@
     <ClInclude Include="Unit.h">
       <Filter>Units\Unit</Filter>
     </ClInclude>
-    <ClInclude Include="Range.h">
-      <Filter>Units\Unit types\headers</Filter>
-    </ClInclude>
     <ClInclude Include="Archer.h">
       <Filter>Units\Range\Archer</Filter>
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Units\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Melee.h">
-      <Filter>Units\Unit types\headers</Filter>
     </ClInclude>
     <ClInclude Include="Swordsman.h">
       <Filter>Units\Melee\Swordsman</Filter>
@@ -142,6 +124,12 @@
     </ClInclude>
     <ClInclude Include="Spawner.h">
       <Filter>Units\Spawner</Filter>
+    </ClInclude>
+    <ClInclude Include="Melee.h">
+      <Filter>Units\Unit types</Filter>
+    </ClInclude>
+    <ClInclude Include="Range.h">
+      <Filter>Units\Unit types</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

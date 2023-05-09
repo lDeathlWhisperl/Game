@@ -1,6 +1,8 @@
 #pragma once
 #include "Unit.h"
 
+// Второй тип - дальний бой
+
 class Range : public Unit
 {
 public:

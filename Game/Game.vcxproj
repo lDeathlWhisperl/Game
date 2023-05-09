@@ -144,10 +144,8 @@
     <ClCompile Include="Crossbower.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Melee.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Point.cpp" />
-    <ClCompile Include="Range.cpp" />
     <ClCompile Include="Heavy.cpp" />
     <ClCompile Include="Swordsman.cpp" />
     <ClCompile Include="Unit.cpp" />

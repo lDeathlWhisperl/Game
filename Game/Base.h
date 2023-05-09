@@ -13,7 +13,7 @@ class Base
 	std::list<Unit*> units;
 
 public:
-	Base(int w, int l) : coords({1, 1}), width(w), length(l) {}
+	Base(int l, int w) : coords({1, 1}), width(w), length(l) {}
 
 	void draw();
 

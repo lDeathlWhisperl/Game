@@ -3,7 +3,6 @@
 
 #include "Base.h"
 #include "Field.h"
-//#include "Point.h"
 
 #define UPDATE_FRAME gotoPoint()
 #define GAMELOOP while(true)
@@ -39,11 +38,14 @@ int main()
     //fullscreen(); // тут по желанию
     Blinking(); // здесь каретка становится невидимой, можешь закомментировать и увидеть, на что это влияет
 
-    Field field(25, 25);
-    Base base(25,25);
+    int length = 25, 
+        width = 25;
+
+    Field field(length, width);
+    Base base(length, width);
     Player player;
 
-    GAMELOOP
+    GAMELOOP 
     {   
         field.draw();
 

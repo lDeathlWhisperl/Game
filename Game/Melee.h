@@ -1,6 +1,8 @@
 #pragma once
 #include "Unit.h"
 
+// Первый тип юнитов - ближний бой
+
 class Melee : public Unit
 {
 public:
