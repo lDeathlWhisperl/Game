@@ -1,13 +1,13 @@
-#include "Archer.h"
+#include "Crossbower.h"
 #include <iostream>
 
-void Archer::draw()
+void Crossbower::draw()
 {
 	gotoPoint({ coords.x + 1,coords.y + 1 });
-	std::cout << 'A';
+	std::cout << 'C';
 }
 
-void Archer::move_to(Point pnt)
+void Crossbower::move_to(Point pnt)
 {
 	if (std::abs((pnt - coords).x + (pnt - coords).y) == 1)
 		coords = pnt;

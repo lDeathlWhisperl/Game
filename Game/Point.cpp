@@ -3,5 +3,5 @@
 
 void gotoPoint(Point pnt)
 {
-	std::cout << "\033[" << pnt.x << ";" << pnt.y << "H";
+	std::cout << "\033[" << pnt.y << ";" << pnt.x << "H";
 }

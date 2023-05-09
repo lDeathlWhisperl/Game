@@ -1,10 +1,10 @@
 #pragma once
 #include "Range.h"
 
-class Archer : public Range
+class Crossbower : public Range
 {
 public:
-	Archer() : Range(3, 1, 0, 2) {}
+	Crossbower() : Range(3, 2, 2, 3) {}
 
 	void draw();
 

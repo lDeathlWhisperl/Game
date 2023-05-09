@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -140,19 +140,32 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Archer.cpp" />
+    <ClCompile Include="Base.cpp" />
+    <ClCompile Include="Crossbower.cpp" />
     <ClCompile Include="Field.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Melee.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Range.cpp" />
+    <ClCompile Include="Heavy.cpp" />
+    <ClCompile Include="Swordsman.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Archer.h" />
+    <ClInclude Include="Base.h" />
+    <ClInclude Include="Crossbower.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="Lvl_1.h" />
+    <ClInclude Include="Lvl_2.h" />
+    <ClInclude Include="Melee.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="Range.h" />
+    <ClInclude Include="Heavy.h" />
+    <ClInclude Include="Spawner.h" />
+    <ClInclude Include="Swordsman.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -1,13 +1,13 @@
-#include "Archer.h"
+#include "Heavy.h"
 #include <iostream>
 
-void Archer::draw()
+void Heavy::draw()
 {
 	gotoPoint({ coords.x + 1,coords.y + 1 });
-	std::cout << 'A';
+	std::cout << 'H';
 }
 
-void Archer::move_to(Point pnt)
+void Heavy::move_to(Point pnt)
 {
 	if (std::abs((pnt - coords).x + (pnt - coords).y) == 1)
 		coords = pnt;

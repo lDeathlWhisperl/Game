@@ -40,6 +40,27 @@
     <Filter Include="Units\Player">
       <UniqueIdentifier>{6a27865f-04ac-4c29-895a-4dfe388edfbb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Units\Melee">
+      <UniqueIdentifier>{856033d8-35d9-4083-8aa5-dac9cfc21fc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Melee\Swordsman">
+      <UniqueIdentifier>{8ccfbe4f-90d2-436e-8b9a-b661163576ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Melee\Heavy">
+      <UniqueIdentifier>{00741c4d-8ee7-44c6-beb2-65a81822d1d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Levels">
+      <UniqueIdentifier>{8646485c-4119-4763-af7a-8d98e976cc43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Levels\lvl 1">
+      <UniqueIdentifier>{3317abca-89e0-4166-85ef-19af8b41572f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Levels\lvl 2">
+      <UniqueIdentifier>{3b6732ec-7efd-4b01-89b2-6a25d12534ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Units\Spawner">
+      <UniqueIdentifier>{0961ae04-dd29-4455-a154-7b0733c1fe3e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -63,6 +84,21 @@
     <ClCompile Include="Player.cpp">
       <Filter>Units\Player</Filter>
     </ClCompile>
+    <ClCompile Include="Melee.cpp">
+      <Filter>Units\Unit types\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Swordsman.cpp">
+      <Filter>Units\Melee\Swordsman</Filter>
+    </ClCompile>
+    <ClCompile Include="Heavy.cpp">
+      <Filter>Units\Melee\Heavy</Filter>
+    </ClCompile>
+    <ClCompile Include="Crossbower.cpp">
+      <Filter>Units\Range\Crossbower</Filter>
+    </ClCompile>
+    <ClCompile Include="Base.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Field.h">
@@ -82,6 +118,30 @@
     </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>Units\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Melee.h">
+      <Filter>Units\Unit types\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Swordsman.h">
+      <Filter>Units\Melee\Swordsman</Filter>
+    </ClInclude>
+    <ClInclude Include="Heavy.h">
+      <Filter>Units\Melee\Heavy</Filter>
+    </ClInclude>
+    <ClInclude Include="Crossbower.h">
+      <Filter>Units\Range\Crossbower</Filter>
+    </ClInclude>
+    <ClInclude Include="Base.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Lvl_1.h">
+      <Filter>Units\Levels\lvl 1</Filter>
+    </ClInclude>
+    <ClInclude Include="Lvl_2.h">
+      <Filter>Units\Levels\lvl 2</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner.h">
+      <Filter>Units\Spawner</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

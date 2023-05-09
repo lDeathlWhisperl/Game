@@ -1,9 +1,12 @@
 #include "Player.h"
+#include "Field.h"
+
 #include <iostream>
 #include <conio.h>
 
 void Player::draw()
 {
+	gotoPoint({coords.x+1, coords.y+1});
 	std::cout << 'P';
 }
 
@@ -11,25 +14,37 @@ void Player::controller()
 {
 	char ch = '\0';
 
-	if (_kbhit()) ch = _getch();
+	ch = _getch();
 
 	switch (ch)
 	{
 	case 'w':
 	case 'W':
-		--coords.y;
+		if(coords.y != 1) --coords.y;
 		break;
 	case 's':
 	case 'S':
-		++coords.y;
+		if (coords.y != Field::width - 2) ++coords.y;
 		break;
 	case 'a':
 	case 'A':
-		--coords.x;
+		if(coords.x != 1) --coords.x;
 		break;
 	case 'd':
 	case 'D':
-		++coords.x;
+		if (coords.x != Field::length * 2 - 3) ++coords.x;
 		break;
 	}
+
+	last_pressed_key = ch;
+}
+
+char Player::lastPressedKey()
+{
+	return last_pressed_key;
+}
+
+Point Player::getCoords()
+{
+	return coords;
 }
