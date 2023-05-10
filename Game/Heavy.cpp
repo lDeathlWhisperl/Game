@@ -9,6 +9,5 @@ void Heavy::draw()
 
 void Heavy::move_to(Point pnt)
 {
-	if (std::abs((pnt - coords).x + (pnt - coords).y) == 1)
-		coords = pnt;
+	coords = pnt;
 }

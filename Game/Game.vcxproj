@@ -142,19 +142,26 @@
     <ClCompile Include="Archer.cpp" />
     <ClCompile Include="Base.cpp" />
     <ClCompile Include="Crossbower.cpp" />
+    <ClCompile Include="Desert.cpp" />
     <ClCompile Include="Field.cpp" />
+    <ClCompile Include="Forest.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Landscape.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Point.cpp" />
     <ClCompile Include="Heavy.cpp" />
     <ClCompile Include="Swordsman.cpp" />
+    <ClCompile Include="Tundra.cpp" />
     <ClCompile Include="Unit.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Archer.h" />
     <ClInclude Include="Base.h" />
     <ClInclude Include="Crossbower.h" />
+    <ClInclude Include="Desert.h" />
     <ClInclude Include="Field.h" />
+    <ClInclude Include="Forest.h" />
+    <ClInclude Include="Landscape.h" />
     <ClInclude Include="Lvl_1.h" />
     <ClInclude Include="Lvl_2.h" />
     <ClInclude Include="Melee.h" />
@@ -164,6 +171,7 @@
     <ClInclude Include="Heavy.h" />
     <ClInclude Include="Spawner.h" />
     <ClInclude Include="Swordsman.h" />
+    <ClInclude Include="Tundra.h" />
     <ClInclude Include="Unit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

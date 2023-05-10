@@ -11,7 +11,8 @@ class Base
 	int menu_id = 0, unit_type = 0, width, length;
 	bool isShopActive = true;
 	std::list<Unit*> units;
-
+	Unit* selected = NULL;
+	Player *p_copy = NULL;
 public:
 	Base(int l, int w) : coords({1, 1}), width(w), length(l) {}
 
@@ -31,7 +32,12 @@ private:
 	void controller_menu();
 	void select_menu();
 
+	void menu_unit_info();
+	void controller_unit_info();
+	void select_unit_info();
+
 	Unit* spawn(int, int);
 	void setCoords();
+	Point direction();
 };
 

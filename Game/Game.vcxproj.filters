@@ -55,12 +55,30 @@
     <Filter Include="Units\Spawner">
       <UniqueIdentifier>{0961ae04-dd29-4455-a154-7b0733c1fe3e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{fbf3c5b4-1d4f-40a9-8250-ba2cdfc7b435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Base">
+      <UniqueIdentifier>{76aea2fc-2ff4-4716-b9c8-accd1a310a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Field">
+      <UniqueIdentifier>{75218892-dbe7-4474-8560-89713b45a52f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Landscape">
+      <UniqueIdentifier>{7dc9d736-97f5-4f0e-8e8b-5ade694e7186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Landscape\Tundra">
+      <UniqueIdentifier>{637ff572-053c-4093-8c7d-d1f3663484cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Landscape\Forest">
+      <UniqueIdentifier>{0af2be88-7704-4fed-9f7e-f061d8323545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Landscape\Desert">
+      <UniqueIdentifier>{ae53d0e8-97f4-473d-8645-f0f27b8bf658}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="Field.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Point.cpp">
@@ -85,13 +103,25 @@
       <Filter>Units\Range\Crossbower</Filter>
     </ClCompile>
     <ClCompile Include="Base.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>World\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>World\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Desert.cpp">
+      <Filter>World\Landscape\Desert</Filter>
+    </ClCompile>
+    <ClCompile Include="Forest.cpp">
+      <Filter>World\Landscape\Forest</Filter>
+    </ClCompile>
+    <ClCompile Include="Tundra.cpp">
+      <Filter>World\Landscape\Tundra</Filter>
+    </ClCompile>
+    <ClCompile Include="Landscape.cpp">
+      <Filter>World\Landscape</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Field.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Point.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -113,9 +143,6 @@
     <ClInclude Include="Crossbower.h">
       <Filter>Units\Range\Crossbower</Filter>
     </ClInclude>
-    <ClInclude Include="Base.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="Lvl_1.h">
       <Filter>Units\Levels\lvl 1</Filter>
     </ClInclude>
@@ -130,6 +157,24 @@
     </ClInclude>
     <ClInclude Include="Range.h">
       <Filter>Units\Unit types</Filter>
+    </ClInclude>
+    <ClInclude Include="Base.h">
+      <Filter>World\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>World\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Desert.h">
+      <Filter>World\Landscape\Desert</Filter>
+    </ClInclude>
+    <ClInclude Include="Forest.h">
+      <Filter>World\Landscape\Forest</Filter>
+    </ClInclude>
+    <ClInclude Include="Tundra.h">
+      <Filter>World\Landscape\Tundra</Filter>
+    </ClInclude>
+    <ClInclude Include="Landscape.h">
+      <Filter>World\Landscape</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

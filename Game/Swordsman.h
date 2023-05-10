@@ -7,7 +7,10 @@
 class Swordsman : public Melee
 {
 public:
-	Swordsman() : Melee(3, 1, 1, 1) {}
+	Swordsman() : Melee(3, 1, 1, 1) 
+	{
+		name = "Swordsman";
+	}
 
 	void draw();
 

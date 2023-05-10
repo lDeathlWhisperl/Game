@@ -7,7 +7,10 @@
 class Crossbower : public Range
 {
 public:
-	Crossbower() : Range(3, 2, 2, 3) {}
+	Crossbower() : Range(3, 2, 2, 3) 
+	{
+		name = "Crossbower";
+	}
 
 	void draw();
 

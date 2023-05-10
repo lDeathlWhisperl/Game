@@ -9,6 +9,5 @@ void Crossbower::draw()
 
 void Crossbower::move_to(Point pnt)
 {
-	if (std::abs((pnt - coords).x + (pnt - coords).y) == 1)
-		coords = pnt;
+	coords += pnt;
 }

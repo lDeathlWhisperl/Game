@@ -14,7 +14,8 @@ void Player::controller()
 {
 	char ch = '\0';
 
-	ch = _getch();
+	if (!is_skip) ch = _getch();
+	is_skip = false;
 
 	switch (ch)
 	{
@@ -47,4 +48,9 @@ char Player::lastPressedKey()
 Point Player::getCoords()
 {
 	return coords;
+}
+
+void Player::skip()
+{
+	is_skip = true;
 }

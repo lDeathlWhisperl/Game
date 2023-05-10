@@ -7,7 +7,10 @@
 class Archer : public Range
 {
 public:
-	Archer() : Range(3, 1, 0, 2) {}
+	Archer() : Range(3, 1, 0, 2) 
+	{
+		name = "Archer";
+	}
 
 	void draw();
 
